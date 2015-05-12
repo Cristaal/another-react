@@ -44,6 +44,16 @@
           );
         }
       });
+
+      var Comment = React.createClass({
+        render: function() {
+          <div className="comment">
+            <h2 className="commentAuthor">
+            {this.props.children}
+          </div>
+        );
+        }
+      });
     </script>
   </body>
 </html>
