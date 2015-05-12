@@ -13,7 +13,7 @@
         render: function() {
           return (
             React.createElement('div', {className: "commentBox"},
-              "Hello, world. I am a Comment Box."
+              "Hello, World! I am a CommentBox."
             )
           );
         }
@@ -22,6 +22,16 @@
         React.createElement(CommentBox, null),
         document.getElementById('content')
       );
+
+      var CommentList = React.createClass({
+        render: function() {
+          return (
+            <div className="commentList">
+              I am a CommentList.
+            </div>
+          );
+        }
+      });
     </script>
   </body>
 </html>
