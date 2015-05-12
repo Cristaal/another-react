@@ -9,6 +9,19 @@
   <body>
     <div id="content"></div>
     <script type="text/jsx">
+      var CommentBox = React.createClass({
+        render: function() {
+          return (
+            <div className="commentBox">
+              Hello, world! I am a Comment Box.
+            </div>
+          );
+        }
+      });
+      React.render(
+        React.createElement(CommentBox, null),
+        document.getElementById('content')
+      );
     </script>
   </body>
 </html>
